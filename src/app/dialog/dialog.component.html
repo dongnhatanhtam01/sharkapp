@@ -1,0 +1,57 @@
+<h1 mat-dialog-title>Add Product Form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="productForm">
+        <mat-form-field appearance="outline">
+            <mat-label>address</mat-label>
+            <input formControlName="address" matInput placeholder="lấy tự động từ khóa bên search">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>house_number</mat-label>
+            <input formControlName="house_number" matInput placeholder="nhập số nhà mong muốn">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>street_name</mat-label>
+            <input formControlName="street_name" matInput placeholder="nhập tên đường mong muốn">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>ward</mat-label>
+            <mat-select formControlName="ward" placeholder="nhập tên phường">
+                <mat-option value="1">
+                    1
+                </mat-option>
+                <mat-option value="1">
+                    1
+                </mat-option>
+                <mat-option value="1">
+                    1
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>district</mat-label>
+            <input formControlName="district" matInput placeholder="nhập tên quận">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>city</mat-label>
+            <input formControlName="city" matInput placeholder="nhập tên thành phố">
+        </mat-form-field>
+
+        <label for="">
+            <h1>Evaluate Rate</h1>
+        </label>
+        <mat-radio-group formControlName="evaluate_rate" class="example-radio-group">
+            <mat-radio-button class="example-radio-button" *ngFor="let item of radioButton" [value]="item">
+                {{item}}
+            </mat-radio-button>
+        </mat-radio-group>
+        <mat-form-field appearance="outline">
+            <mat-label>comment</mat-label>
+            <textarea formControlName="comment" matInput></textarea>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="address()">{{actionBtn}}</button>
+</div>
