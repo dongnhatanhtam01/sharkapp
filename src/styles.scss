@@ -1,4 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.flex-container {
+    .form_content {
+        width: 100%;
+        max-width: 80%;
+
+    }
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    /* align vertical */
+    flex-direction: row;
+    justify-content: space-between;
+
+    // * {
+    //     flex: 1 1 auto;
+    // }
+
+    .flex-container>div {
+
+        text-align: center;
+
+    }
+
+    .mat-form-field-wrapper {
+        padding-bottom: 0 !important;
+        width: 100%;
+    }
+}

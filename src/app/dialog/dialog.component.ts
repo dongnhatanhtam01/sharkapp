@@ -57,8 +57,12 @@ export class DialogComponent implements OnInit {
       if (this.productForm.valid) {
         this._apiService.postProduct(this.productForm.value).subscribe
           ({
-            next: (res) => { alert('address added properly!') },
+            next: (res) => { 
+              alert('address added properly!')
+              this._dialogRef.close('added')
+            },
             error: (err) => { alert('error occur!') }
+            
           })
       }
     }

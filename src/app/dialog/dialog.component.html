@@ -1,10 +1,17 @@
 <h1 mat-dialog-title>Add Product Form</h1>
 <div mat-dialog-content>
     <form [formGroup]="productForm">
-        <mat-form-field appearance="outline">
-            <mat-label>address</mat-label>
-            <input formControlName="address" matInput placeholder="lấy tự động từ khóa bên search">
-        </mat-form-field>
+        <div class="flex-container">
+            <div class="text">a</div>
+            <div class="form_content">
+                <mat-form-field style="padding: 0 !important; width: 100%;" appearance="outline" >
+                    <div >
+                        <mat-label>address</mat-label>
+                        <input style="padding: 0 !important; width: 100%;" formControlName="address" matInput placeholder="lấy tự động từ khóa bên search">
+                    </div>
+                </mat-form-field>
+            </div>
+        </div>
         <mat-form-field appearance="outline">
             <mat-label>house_number</mat-label>
             <input formControlName="house_number" matInput placeholder="nhập số nhà mong muốn">

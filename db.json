@@ -1,17 +1,6 @@
 {
   "address": [
     {
-      "address": "1932 Tran Phu, P4, Q5 hcmd",
-      "house_number": "123",
-      "street_name": "a",
-      "ward": "1",
-      "district": "a",
-      "city": "a",
-      "evaluate_rate": "branch new",
-      "comment": "ads",
-      "id": 1
-    },
-    {
       "address": "3eds",
       "house_number": "asdasd",
       "street_name": "1",
@@ -53,10 +42,9 @@
       "street_name": "1",
       "ward": "1",
       "district": "asdasdasd",
-      "province": "asdasd",
       "city": "asdasd",
-      "evaluate_rate": "refurbished",
-      "comment": "asdasd",
+      "evaluate_rate": "branch new",
+      "comment": "1",
       "id": 7
     },
     {
@@ -129,6 +117,39 @@
       "evaluate_rate": "branch new",
       "comment": "ss",
       "id": 13
+    },
+    {
+      "address": "3 Tran nhan ton Phuong 4, Quan 5, TP.HCM",
+      "house_number": "3",
+      "street_name": "Tran nhan ton",
+      "ward": "1",
+      "district": "quan 5",
+      "city": "ho chi minh",
+      "evaluate_rate": "branch new",
+      "comment": "asdsad",
+      "id": 14
+    },
+    {
+      "address": "asd",
+      "house_number": "asd",
+      "street_name": "asd",
+      "ward": "1",
+      "district": "asd",
+      "city": "ads",
+      "evaluate_rate": "branch new",
+      "comment": "asd",
+      "id": 15
+    },
+    {
+      "address": "asd",
+      "house_number": "asd",
+      "street_name": "asd",
+      "ward": "1",
+      "district": "asd",
+      "city": "asd",
+      "evaluate_rate": "second hand",
+      "comment": "asdasd",
+      "id": 16
     }
   ],
   "comments": [
